@@ -2,12 +2,12 @@ import React from 'react';
 
 
 function SecondPage(props) {
-  const {Pagsiguiente, Paganterior, Nombre} = props
+  const { goToSecondPage, goToFirstPage, Nombre } = props
   return (
     <div>
      <p>Hola { Nombre } Bienvenido(a) a Globant.</p>
-     <button onClick={Pagsiguiente}>Next</button>
-     <button onClick={Paganterior}>Previous</button>
+     <button onClick={goToSecondPage}>Next</button>
+     <button onClick={goToFirstPage}>Previous</button>
     </div>
   );
 }

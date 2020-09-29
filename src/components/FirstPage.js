@@ -21,7 +21,7 @@ this.setState({[event.target.name]: event.target.value})
 
 render(){
   const {fullName} = this.state
-  const {Pagsiguiente} = this.props
+  const {goToSecondPage} = this.props
     return(
       <div className = "contenedor">
         <img src={welcome} alt="welcome" className='welcome'/> 
@@ -36,7 +36,7 @@ render(){
         <button type='submit'>Save</button>
         </form>
         <div>
-        <button className='posicion_btn'onClick={Pagsiguiente}>Next</button>
+        <button className='posicion_btn'onClick={goToSecondPage}>Next</button>
       </div>
      </div>
     )  
