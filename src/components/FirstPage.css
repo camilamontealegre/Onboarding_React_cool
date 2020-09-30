@@ -1,20 +1,41 @@
 .posicion_btn{
  margin-top: 40px;
  margin-left: 650px;
+ height: 2em;
+ background-color: #A93A3A;
+ color: white;
+ border: none;
 }
-
-.contenedor{
-background-color: pink;
-height: 900px;
+.save_btn {
+    height: 2.5em;
+    background-color: #A93A3A;
+    color: white;
+    border: none;
 }
-
 .container{
 display: flex;
 justify-content: center;
 }
-.input_position{
-margin-left: 550px;
+.input{
+    margin-left: 550px;
+    height: 2em;
 }
 .welcome{
-margin-left: 420px;
+margin: 0 auto;
+width: 25em;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greet {
+    margin-top: 0px;
+    padding-top: 2em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #A93A3A;
+    text-shadow: 0px 2px rgb(202, 118, 118);
 }
