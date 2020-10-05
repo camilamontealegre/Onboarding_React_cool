@@ -23,7 +23,7 @@ render(){
   const {fullName} = this.state
   const {goToSecondPage} = this.props
     return(
-      <div className="contenedor">
+      <div className="contiene">
         <h1 className="greet">So excited to have you on board!</h1>
         <img src={welcome} alt="welcome" className='welcome'/> 
         <form onSubmit={this.handleSubmit}>
@@ -35,7 +35,7 @@ render(){
         onChange={this.handleInputChange}
         ></input>
         <button type='submit' className="save_btn">Save</button>
-        <button className='posicion_btn'onClick={goToSecondPage}>Next</button>
+        <button className='posicion_next'onClick={goToSecondPage}>Next</button>
         </form>
       </div>
     )  

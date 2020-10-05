@@ -1,4 +1,5 @@
-.container {
+.contenedor {
+    display: flex;
     text-align: center;
     padding: 1.5em;
     display: flex;
@@ -19,4 +20,7 @@ button {
     background-color: #A93A3A;
     color: white;
     border: none;
+}
+.first-paragraph, .third-paragraph{
+    color: white
 }

@@ -1,32 +1,33 @@
-.posicion_btn{
+.posicion_next{
  margin-top: 40px;
- margin-left: 650px;
+ margin-left: 250px;
  height: 2em;
  background-color: #A93A3A;
  color: white;
  border: none;
 }
 .save_btn {
+    width: 4em;
     height: 2.5em;
     background-color: #A93A3A;
     color: white;
     border: none;
 }
-.container{
-display: flex;
-justify-content: center;
-}
+
 .input{
-    margin-left: 550px;
+    margin-left:25%;
     height: 2em;
+    width: 210px;
+    font-size: 14px;
 }
 .welcome{
 margin: 0 auto;
-width: 25em;
+width: 30em;
 }
-.contenedor{
+.contiene{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -36,6 +37,5 @@ width: 25em;
     margin-bottom: 0px;
     padding-bottom: 0px;
     text-align: center;
-    color: #A93A3A;
-    text-shadow: 0px 2px rgb(202, 118, 118);
+    color:white;
 }
