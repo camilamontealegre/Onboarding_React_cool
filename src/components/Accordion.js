@@ -4,7 +4,7 @@ import React from 'react'
 function Accordion({card, index, toggleCards}) {
     return (
         <div
-           className={"card" + (card.open ? 'open': '')}
+           className={"card" + (card.open ? 'open':'')}
            key={index}
            onClick={() => toggleCards(index)}
            >

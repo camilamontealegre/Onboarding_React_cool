@@ -3,7 +3,6 @@ import './ThirdPage.css';
 import growingpath from './growing-path2.png';
 import Accordion from './Accordion'
 
-
  function ThirdPage(){
   const [ seniority, setSeniority ] = useState([
     {
@@ -40,12 +39,15 @@ import Accordion from './Accordion'
   }
 
   return (
-    <div className="caja">
-      <img src={growingpath} alt="people-growing" className='image-size'/> 
-      <div className="accordion">
-      {seniority.map((card, i)=>(
-        <Accordion card={card} index={i} toggleCards={toggleCards}/>
-      ))}
+    <div>
+      <h2 className="titulo">Career Path</h2>
+      <div className="caja">
+        <img src={growingpath} alt="people-growing" className='image-size'/> 
+        <div className="accordion">
+        {seniority.map((card, i)=>(
+          <Accordion card={card} index={i} toggleCards={toggleCards}/>
+        ))}
+        </div>
       </div>
     </div>
   )

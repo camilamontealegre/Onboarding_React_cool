@@ -6,10 +6,11 @@ align-items: center;
 justify-content: center;
 }
 
-.caja .titulo2{
-    color: #A93A3A;
-    margin-left: 120px;
-    font-size: 30px;
+.titulo{
+color: #A93A3A;
+text-align: center;
+margin-top: 50px;
+font-size: 30px;
 }
 
 .image-size{
