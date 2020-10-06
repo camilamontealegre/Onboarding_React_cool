@@ -1,12 +1,15 @@
-.container{
+.caja{
 font-size: 16px;
 display: flex;
 flex-direction: row;
+align-items: center;
+justify-content: center;
 }
 
-h2{
-    margin-top: 0px;
-    color: #A93A3A
+.caja .titulo2{
+    color: #A93A3A;
+    margin-left: 120px;
+    font-size: 30px;
 }
 
 .image-size{
@@ -15,8 +18,9 @@ h2{
 .accordion{
     width:40%;
     max-width:768px;
-    margin: 0 auto;
-    padding:25px
+    margin-top: 80px;
+    padding:25px;
+    color:#A93A3A
 }
 .accordion .card{
     margin: 15px;
@@ -37,11 +41,10 @@ h2{
     position: absolute;
     right: 0px;
     top:50%;
-    transform: translateY(-50%);
+    /* transform: translateY(50%); */
     width:30px;
     height:30px;
     
-    background-image:('../arrow-down.png');
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -52,18 +55,16 @@ h2{
     overflow-y: hidden;
     transition: all 0.4s ease;
     font-size: 20px;
-    color: indianred;
 }
 .accordion .card.open .card-title {
     margin-bottom: 15px ;
 }
 
-.accordion .card.open .card-title::after {
+/* .accordion .card.open .card-title::after {
     transform: translateY(-50%) rotate(180deg);
-}
+} */
 
-.accordion .card.open .card-description {
+/* .accordion .card.open .card-description {
     max-height:1000px;
     opacity:1;
-    color: indianred;
-} 
+}  */

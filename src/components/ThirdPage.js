@@ -7,23 +7,23 @@ import Accordion from './Accordion'
  function ThirdPage(){
   const [ seniority, setSeniority ] = useState([
     {
-      title:'Initial and Mid Level',
+      title:'Initial and Mid Level ⬇️',
       description:'Junior, Junior Advanced, Semi Senior, Semisenior Advanced',
       open: false
     },
     {
-      title:'Senior',
+      title:'Senior ⬇️',
       description:'Senior, Software designer, Architect',
       open: false
     },
     {
-      title:'Expert and MGM',
-      description:'Junior, Junior Adavanced, Semi Senior, Semisenior Advanced',
+      title:'Expert and MGM ⬇️',
+      description:'Tecnical manger, Technical director',
       open: false
     },
     {
-      title:'Senior Management',
-      description:'Junior, Junior Adavanced, Semi Senior, Semisenior Advanced',
+      title:'Senior Management ⬇️',
+      description:'Studio Partener, VP Tech',
       open: false
     },
    ]);
@@ -40,8 +40,7 @@ import Accordion from './Accordion'
   }
 
   return (
-    <div className="container">
-      <h2>Career Path</h2>
+    <div className="caja">
       <img src={growingpath} alt="people-growing" className='image-size'/> 
       <div className="accordion">
       {seniority.map((card, i)=>(

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Accordion({card, index, toggleCards}) {
     return (
         <div
