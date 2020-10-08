@@ -21,7 +21,7 @@ function App() {
       { page === 1 && <FirstPage guardarNombre = {setName} goToSecondPage = {nextPage}/>}
       { page === 2 && <SecondPage Nombre = {userName} goToFirstPage = {lastPage} goToThirdPage = {nextPage}/>}
       { page === 3 && <ThirdPage  goToSecondPage = {lastPage} goToFourthPage = {nextPage}/>}
-      { page === 4 && <FourthPage Nombre = {userName} />}
+      { page === 4 && <FourthPage Nombre = {userName} goToThirdPage = {lastPage} goToFifthPage = {nextPage} />}
     </div>
   );
 }

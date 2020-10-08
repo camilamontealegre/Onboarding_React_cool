@@ -69,3 +69,8 @@ font-size: 30px;
     max-height:1000px;
     opacity:1;
 }  */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}

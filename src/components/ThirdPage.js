@@ -49,11 +49,11 @@ import Accordion from './Accordion'
           <Accordion card={card} index={i} toggleCards={toggleCards}/>
         ))}
         </div>
-        <div className="buttons">
-         <button onClick={goToSecondPage}>Previous</button>
-         <button onClick={goToFourthPage}>Next</button>
-       </div>
       </div>
+      <div className="buttons">
+          <button onClick={goToSecondPage}>Previous</button>
+          <button onClick={goToFourthPage}>Next</button>
+        </div>
     </div>
   )
 }
