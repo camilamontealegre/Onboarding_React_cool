@@ -60,26 +60,29 @@ export default function SimpleTabs() {
   };
 
   return (
-    <div className={classes.root}>
+    <div>
       <div>
         <h2>This is the Triforce</h2>
       </div>
-      <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Expertise" {...a11yProps(0)} />
-          <Tab label="Site" {...a11yProps(1)} />
-          <Tab label="Business" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
-      <TabPanel value={value} index={0}>
-      <img src={cope} alt="people-growing" className='image-size'/> 
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-      <img src={ui} alt="people-growing" className='image-size'/> 
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-      <img src={project} alt="people-growing" className='image-size'/> 
-      </TabPanel>
+      <div className={classes.root}>
+          <AppBar position="static">
+            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+              <Tab label="Expertise" {...a11yProps(0)} />
+              <Tab label="Site" {...a11yProps(1)} />
+              <Tab label="Business" {...a11yProps(2)} />
+            </Tabs>
+          </AppBar>
+          <TabPanel value={value} index={0}>
+            <img src={cope} alt="people-growing" className='image-size'/> 
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <img src={ui} alt="people-growing" className='image-size'/> 
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <img src={project} alt="people-growing" className='image-size'/> 
+          </TabPanel>
+      </div>
     </div>
+    
   );
 }
