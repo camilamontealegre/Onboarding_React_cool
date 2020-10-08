@@ -1,16 +1,39 @@
-.TabsBar {
-    width: 30em;
-}
-.image-size{
-    width: 20em;
-    text-align: center;
-}
 .triforce {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 .header {
     color: white;
+    height: auto;
+    text-align: center;
+    line-height: 3em;
+    margin-bottom: 1em;
 }
+.header > h2 {
+    font-size: 50px;
+}
+.tagline {
+    font-size: 20px;
+}
+.description {
+    font-size: 25px;
+}
+.TabsBar {
+    width: 30em;
+}
+.TabPanel {
+    display: flex;
+    justify-content: center;
+}
+.image-size {
+    height: 18em;
+    width: auto;
+}
+
+
+
+
+

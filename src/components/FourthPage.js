@@ -11,7 +11,7 @@ import './FourthPage.css';
 
 export default function FourthPage(props) {
   const [value, setValue] = React.useState(0);
-  const { Nombre } = props;
+  const { Nombre, goToFifthPage, goToThirdPage } = props;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -21,31 +21,35 @@ export default function FourthPage(props) {
     <div className="triforce">
       <div className="header">
         <h2>This is the Triforce</h2>
-        <p>{ Nombre } You are here</p>
+        <p className="tagline">You are here, { Nombre } </p>
+        <p className="description">The three aspects consist of the Studio, TDC and Accounts</p>
       </div>
-        <div className="TabsBar"> 
-          <AppBar position="static" className="AppBar">
-            <Tabs value={value} onChange={handleChange}>
-              <Tab label="Expertise"/>
-              <Tab label="Site"/>
-              <Tab label="Business"/>
-            </Tabs>
-          </AppBar>
-          <TabPanel value={value} index={0}>
-            <img src={cope} alt="people-growing" className='image-size'/> 
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <img src={ui} alt="people-growing" className='image-size'/> 
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <img src={project} alt="people-growing" className='image-size'/> 
-          </TabPanel>
+      <div className="TabsBar"> 
+        <AppBar position="static" className="AppBar">
+          <Tabs value={value} onChange={handleChange}>
+            <Tab label="Expertise"/>
+            <Tab label="Site"/>
+            <Tab label="Business"/>
+          </Tabs>
+        </AppBar>
+        <TabPanel value={value} index={0} className="TabPanel">
+          <img src={cope} alt="people-growing" className='image-size'/> 
+        </TabPanel>
+        <TabPanel value={value} index={1} className="TabPanel">
+          <img src={ui} alt="people-growing" className='image-size'/> 
+        </TabPanel>
+        <TabPanel value={value} index={2} className="TabPanel">
+          <img src={project} alt="people-growing" className='image-size'/> 
+        </TabPanel>
+      </div>
+      <div className="buttons">
+          <button onClick={goToThirdPage}>Previous</button>
+          <button onClick={goToFifthPage}>Next</button>
       </div>
       <div className="buttons">
          <button onClick={goToThirdPage}>Previous</button>
          <button onClick={goToFifthPage}>Next</button>
        </div>
     </div>
-    
   );
 }

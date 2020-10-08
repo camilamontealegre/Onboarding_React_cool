@@ -12,7 +12,6 @@ function TabPanel(props) {
         hidden={value !== index}
         id={`simple-tabpanel-${index}`}
         {...other}
-        className="TabPanel"
       >
         {value === index && (
           <Box p={3}>
