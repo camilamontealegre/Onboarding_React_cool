@@ -1,3 +1,16 @@
+.TabsBar {
+    width: 30em;
+}
 .image-size{
-    width: 300px;
+    width: 20em;
+    text-align: center;
+}
+.triforce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    color: white;
 }

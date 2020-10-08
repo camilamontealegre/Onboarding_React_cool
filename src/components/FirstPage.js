@@ -7,7 +7,7 @@ class FirstPage extends Component {
         super(props)
         this.state = {
             fullName: null
-         }
+        }
     }
 
 handleSubmit = (event) => {
@@ -16,7 +16,7 @@ handleSubmit = (event) => {
 }
 
 handleInputChange = (event) => {
-this.setState({[event.target.name]: event.target.value})
+  this.setState({[event.target.name]: event.target.value})
 }
 
 render(){
@@ -27,15 +27,15 @@ render(){
         <h1 className="greet">So excited to have you on board!</h1>
         <img src={welcome} alt="welcome" className='welcome'/> 
         <form onSubmit={this.handleSubmit}>
-        <input 
-        className='input'
-        type ='text' 
-        placeholder='Your name' 
-        value={fullName} name='fullName' 
-        onChange={this.handleInputChange}
-        ></input>
-        <button type='submit' className="save_btn">Save</button>
-        <button className='posicion_next'onClick={goToSecondPage}>Next</button>
+          <input 
+            className='input'
+            type ='text' 
+            placeholder='Your name' 
+            value={fullName} name='fullName' 
+            onChange={this.handleInputChange}
+            ></input>
+          <button type='submit' className="save_btn">Save</button>
+          <button className='posicion_next'onClick={goToSecondPage}>Next</button>
         </form>
       </div>
     )  
