@@ -18,10 +18,10 @@ function App() {
 
   return (
     <div>
-     { page === 1 && <FirstPage guardarNombre = {setName} goToSecondPage = {nextPage}/>}
-     { page === 2 && <SecondPage Nombre = {userName} goToFirstPage = {lastPage} goToThirdPage = {nextPage}/>}
-     { page === 3 && <ThirdPage  goToSecondPage = {lastPage} goToFourthPage = {nextPage}/>}
-     { page === 4 && <FourthPage />}
+      { page === 1 && <FirstPage guardarNombre = {setName} goToSecondPage = {nextPage}/>}
+      { page === 2 && <SecondPage Nombre = {userName} goToFirstPage = {lastPage} goToThirdPage = {nextPage}/>}
+      { page === 3 && <ThirdPage  goToSecondPage = {lastPage} goToFourthPage = {nextPage}/>}
+      { page === 4 && <FourthPage />}
     </div>
   );
 }
