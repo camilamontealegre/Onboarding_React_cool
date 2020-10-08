@@ -6,6 +6,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import ui from './ui.png';
+import cope from './cope.png';
+import project from './project.jpg';
+import './FourthPage.css';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,21 +61,24 @@ export default function SimpleTabs() {
 
   return (
     <div className={classes.root}>
+      <div>
+        <h2>This is the Triforce</h2>
+      </div>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Expertise" {...a11yProps(0)} />
+          <Tab label="Site" {...a11yProps(1)} />
+          <Tab label="Business" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+      <img src={cope} alt="people-growing" className='image-size'/> 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <img src={ui} alt="people-growing" className='image-size'/> 
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <img src={project} alt="people-growing" className='image-size'/> 
       </TabPanel>
     </div>
   );

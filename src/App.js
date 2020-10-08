@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FirstPage from './components/FirstPage';
 import SecondPage from './components/SecondPage';
 import ThirdPage from './components/ThirdPage';
-
+import FourthPage from './components/FourthPage';
 
 function App() {
   const [userName, setName] = useState('');
@@ -20,7 +20,8 @@ function App() {
     <div>
      { page === 1 && <FirstPage guardarNombre = {setName} goToSecondPage = {nextPage}/>}
      { page === 2 && <SecondPage Nombre = {userName} goToFirstPage = {lastPage} goToThirdPage = {nextPage}/>}
-     { page === 3 && <ThirdPage goToThirdPage = {nextPage}/>}
+     { page === 3 && <ThirdPage  goToSecondPage = {lastPage} goToFourthPage = {nextPage}/>}
+     { page === 4 && <FourthPage />}
     </div>
   );
 }
