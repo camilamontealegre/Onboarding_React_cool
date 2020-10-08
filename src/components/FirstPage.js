@@ -10,12 +10,12 @@ class FirstPage extends Component {
          }
     }
 
-handleSubmit = (event)=>{
- event.preventDefault() //este se pone para evitar recargar la página
- this.props.guardarNombre(this.state.fullName)
+handleSubmit = (event) => {
+  event.preventDefault() //este se pone para evitar recargar la página
+  this.props.guardarNombre(this.state.fullName)
 }
 
-handleInputChange =(event)=>{
+handleInputChange = (event) => {
 this.setState({[event.target.name]: event.target.value})
 }
 
