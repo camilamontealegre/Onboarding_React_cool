@@ -16,7 +16,7 @@ export default function FourthPage(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const {goToThirdPage, goToFifthPage} = props
+
   return (
     <div className="triforce">
       <div className="header">
@@ -46,10 +46,6 @@ export default function FourthPage(props) {
           <button onClick={goToThirdPage}>Previous</button>
           <button onClick={goToFifthPage}>Next</button>
       </div>
-      <div className="buttons">
-         <button onClick={goToThirdPage}>Previous</button>
-         <button onClick={goToFifthPage}>Next</button>
-       </div>
     </div>
   );
 }
