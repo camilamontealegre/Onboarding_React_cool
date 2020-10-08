@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -19,8 +18,8 @@ function TabPanel(props) {
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
       {...other}
+      className="TabPanel"
     >
       {value === index && (
         <Box p={3}>
@@ -37,22 +36,7 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
-
 export default function SimpleTabs() {
-  const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -60,16 +44,16 @@ export default function SimpleTabs() {
   };
 
   return (
-    <div>
+    <div className="triforce">
       <div>
         <h2>This is the Triforce</h2>
       </div>
-      <div className={classes.root}>
-          <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-              <Tab label="Expertise" {...a11yProps(0)} />
-              <Tab label="Site" {...a11yProps(1)} />
-              <Tab label="Business" {...a11yProps(2)} />
+        <div className="TabsBar"> 
+          <AppBar position="static" className="AppBar">
+            <Tabs value={value} onChange={handleChange}>
+              <Tab label="Expertise"/>
+              <Tab label="Site"/>
+              <Tab label="Business"/>
             </Tabs>
           </AppBar>
           <TabPanel value={value} index={0}>
