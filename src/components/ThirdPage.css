@@ -1,3 +1,7 @@
+.group{
+    background-color: black;
+    height: 650px;
+}
 .caja{
 font-size: 16px;
 display: flex;

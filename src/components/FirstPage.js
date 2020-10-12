@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import welcome from './welcome.png';
-import './FirstPage.css'
+import './FirstPage.css';
+import {withRouter} from 'react-router-dom';
 
 class FirstPage extends Component {
     constructor(props){
@@ -20,8 +21,9 @@ handleInputChange = (event) => {
 }
 
 render(){
+  console.log(this.props)
   const {fullName} = this.state
-  const {goToSecondPage} = this.props
+
     return(
       <div className="contiene">
         <h1 className="greet">So excited to have you on board!</h1>
@@ -35,7 +37,9 @@ render(){
             onChange={this.handleInputChange}
             ></input>
           <button type='submit' className="save_btn">Save</button>
-          <button className='posicion_next'onClick={goToSecondPage}>Next</button>
+          <button className='posicion_next'onClick={()=>{
+            this.props.history.push("/letsimagine")
+          }}>Next</button>
         </form>
       </div>
     )  
@@ -43,6 +47,6 @@ render(){
 
 }
     
-export default FirstPage
+export default withRouter ( FirstPage )
 
 
