@@ -27,6 +27,8 @@ width: 30em;
 .contiene{
     display: flex;
     flex-direction: column;
+    background-color: black;
+    height: 650px;
     align-items: center;
     justify-content: center;
 }

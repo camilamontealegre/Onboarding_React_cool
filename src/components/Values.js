@@ -23,16 +23,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ControlledAccordions() {
+export default function Values(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+  const { goToFourthPage, goToSixthPage } = props;
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 
   return (
-
+    <div className="agrupa-todo">
     <div className={classes.root}>
     <h2 className="title-values">Valores</h2>
     <img src={manifesto} alt="Gloabnt manifesto " className='manifesto'/> 
@@ -127,9 +128,10 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <div className="buttons">
-         <button>Previous</button>
-         <button>Next</button>
+         <button onClick={goToFourthPage}>Previous</button>
+         <button onClick={goToSixthPage}>Next</button>
       </div>
+    </div>
     </div>
   );
 }

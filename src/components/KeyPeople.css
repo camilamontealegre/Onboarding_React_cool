@@ -1,0 +1,62 @@
+.everything{
+    background-color: black;
+    height: 610px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: black;
+    color:white;
+    
+}
+.contenedor .row{
+    justify-content: center;
+}
+.roundedimg {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+.people-title{
+    color: white;
+    padding-top: 30px;
+    margin-left: 70px;
+    padding-bottom: 15px;
+}
+.people-subtitle {
+    color:white;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    border-top: 10px solid yellowgreen;
+    width: 20px;
+    display: inline;
+}
+
+.item-name{
+    margin-left: 18px;
+}
+.item-role{
+    text-align: center;
+    color:#90e729;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+.blue{
+    color:#993399
+}
+.next-button{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: white;
+    margin-right:13px;
+    margin-top: 50px
+  }
+
+.find-me{
+    color: rgb(199, 187, 187);
+    text-align: center;
+    padding-left: 25px;
+    font-size: 14px;
+}
