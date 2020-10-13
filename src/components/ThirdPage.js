@@ -3,8 +3,9 @@ import './ThirdPage.css';
 import growingpath from './growing-path2.png';
 import Accordion from './Accordion';
 import {useHistory} from 'react-router-dom';
+import FooterButtons from './FooterButtons';
 
- function ThirdPage(props){
+ function ThirdPage(){
   const history= useHistory()
   const [ seniority, setSeniority ] = useState([
     {
@@ -45,17 +46,21 @@ import {useHistory} from 'react-router-dom';
     <div className="group">
       <h2 className="titulo">Career Path</h2>
       <div className="caja">
-        <img src={growingpath} alt="people-growing" className='image-size'/> 
+        <img src={growingpath} alt="people-growing" className='image-growing'/> 
         <div className="accordion">
         {seniority.map((card, i)=>(
           <Accordion card={card} index={i} toggleCards={toggleCards}/>
         ))}
         </div>
       </div>
-      <div className="buttons">
-          <button onClick={()=>{history.push("/letsimagine")}}>Previous</button>
-          <button onClick={()=>{history.push("/triforce")}}>Next</button>
-        </div>
+      <FooterButtons 
+        OnPrevious={()=>{
+          history.push("/letsimagine")
+          }}
+        OnNext={()=>{
+          history.push("/triforce")
+         }}
+      />
     </div>
   )
 }

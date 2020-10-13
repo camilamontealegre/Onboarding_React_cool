@@ -8,11 +8,12 @@ import project from './project.jpg';
 import TabPanel from './TabPanel';
 import './FourthPage.css';
 import {useHistory} from 'react-router-dom';
+import FooterButtons from './FooterButtons';
 
 export default function FourthPage(props) {
   const [value, setValue] = React.useState(0);
   const { Nombre } = props;
-  const history = useHistory()
+  const history = useHistory();
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -20,7 +21,7 @@ export default function FourthPage(props) {
   return (
     <div className="triforce">
       <div className="header">
-        <h2>This is the Triforce</h2>
+        <h2 className="title-values">This is the Triforce</h2>
         <p className="tagline">You are here, { Nombre } </p>
         <p className="description">The three aspects consist of the Studio, TDC and Accounts</p>
       </div>
@@ -42,10 +43,14 @@ export default function FourthPage(props) {
           <img src={project} alt="people-growing" className='image-size'/> 
         </TabPanel>
       </div>
-      <div className="buttons">
-          <button onClick={()=>{history.push("/third")}}>Previous</button>
-          <button onClick={()=>{history.push("/values")}}>Next</button>
-      </div>
+      <FooterButtons 
+        OnPrevious={()=>{
+          history.push("/third")
+          }}
+        OnNext={()=>{
+          history.push("/values")
+         }}
+      />
     </div>
   );
 }

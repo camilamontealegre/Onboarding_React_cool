@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import welcome from './welcome.png';
 import './FirstPage.css';
 import {withRouter} from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+
 
 class FirstPage extends Component {
     constructor(props){
@@ -23,10 +25,14 @@ handleInputChange = (event) => {
 render(){
   console.log(this.props)
   const {fullName} = this.state
-
+  const divStyle = {
+    paddingBottom: '30px',
+    backgroundColor: '#37b051',
+    borderColor: 'transparent'
+  }
     return(
       <div className="contiene">
-        <h1 className="greet">So excited to have you on board!</h1>
+        <h2 className="greet">So excited to have you on board!</h2>
         <img src={welcome} alt="welcome" className='welcome'/> 
         <form onSubmit={this.handleSubmit}>
           <input 
@@ -36,10 +42,10 @@ render(){
             value={fullName} name='fullName' 
             onChange={this.handleInputChange}
             ></input>
-          <button type='submit' className="save_btn">Save</button>
-          <button className='posicion_next'onClick={()=>{
+          <Button type='submit' style={divStyle} className="save_btn">Save</Button>
+          <Button className='posicion_next' style={divStyle} onClick={()=>{
             this.props.history.push("/letsimagine")
-          }}>Next</button>
+          }}>Next</Button>
         </form>
       </div>
     )  

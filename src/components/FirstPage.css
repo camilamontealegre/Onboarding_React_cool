@@ -1,28 +1,28 @@
 .posicion_next{
- margin-top: 40px;
- margin-left: 250px;
- height: 2em;
- background-color: #A93A3A;
- color: white;
- border: none;
+    margin-top: 40px;
+    margin-left: 250px;
+    height: 2em;
+    color: white;
+    border: none;
 }
 .save_btn {
     width: 4em;
     height: 2.5em;
-    background-color: #A93A3A;
     color: white;
     border: none;
 }
 
 .input{
     margin-left:25%;
+    margin-right:3%;
     height: 2em;
     width: 210px;
     font-size: 14px;
+    margin-top: 20px;
 }
 .welcome{
-margin: 0 auto;
-width: 30em;
+    margin: 0 auto;
+    width: 30em;
 }
 .contiene{
     display: flex;
@@ -35,7 +35,7 @@ width: 30em;
 
 .greet {
     margin-top: 0px;
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 0px;
     padding-bottom: 0px;
     text-align: center;
