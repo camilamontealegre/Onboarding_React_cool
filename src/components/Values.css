@@ -1,7 +1,24 @@
+
 .title-values{
-    color: white
+    color: white;
+    margin-left: 55px;
+    padding-top: 30px;
 }
 .agrupa-todo{
     background-color: black;
     height: 650px
+}
+.box{
+    display: flex;
+}
+.manifesto{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    margin: 30px;
+}
+.accordion-2{
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 50px ;
 }

@@ -2,10 +2,11 @@ import React from 'react';
 import './KeyPeople.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import FooterButtons from './FooterButtons';
-  
+import {useHistory} from 'react-router-dom';
+
 
 export default function KeyPeople() {
-  
+  const history = useHistory()
     return (
       <div className="everything">
         <h2 className="people-title">UI Studio COPE</h2>
@@ -49,7 +50,14 @@ export default function KeyPeople() {
           </Col>
           </Row>
     </Container>
-    <FooterButtons/>
+    <FooterButtons 
+        OnPrevious={()=>{
+          history.push("/values")
+          }}
+        OnNext={()=>{
+          history.push("/ready")
+         }}
+      /> 
       </div>
     );
 

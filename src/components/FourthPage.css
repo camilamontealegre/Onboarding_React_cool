@@ -1,11 +1,16 @@
+.title-values{
+    color: white;
+    margin-left: 55px;
+    padding-top: 30px;
+}
+
 .triforce {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
     background-color: black;
-    height: 650px;
+    height: 750px;
 }
 .header {
     color: white;
@@ -22,6 +27,7 @@
 }
 .description {
     font-size: 25px;
+    color: yellowgreen;
 }
 .TabsBar {
     width: 30em;

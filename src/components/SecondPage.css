@@ -6,20 +6,22 @@
     flex-direction: column;
     align-items: center;
     font-size: 2.5em;
-    color: #A93A3A;
     background-color: black;
     height: 650px;
 }
+.first-paragraph{
+    padding-top: 2em;
+}
 .glober {
-    background-color: rgb(202, 118, 118);
+    background-color: yellowgreen;
 }
 .emphasis {
+    color: yellowgreen;
     font-weight: bold;
 }
 button {
     height: 2em;
     margin-left: 0.5em;
-    background-color: #A93A3A;
     color: white;
     border: none;
 }
