@@ -4,6 +4,7 @@ import SecondPage from './components/SecondPage';
 import ThirdPage from './components/ThirdPage';
 import FourthPage from './components/FourthPage';
 import Values from './components/Values';
+import Keypeople from './components/Keypeople';
 
 function App() {
   const [userName, setName] = useState('');
@@ -23,7 +24,8 @@ function App() {
       { page === 2 && <SecondPage Nombre = {userName} goToFirstPage = {lastPage} goToThirdPage = {nextPage}/>}
       { page === 3 && <ThirdPage  goToSecondPage = {lastPage} goToFourthPage = {nextPage}/>}
       { page === 4 && <FourthPage Nombre = {userName} goToThirdPage = {lastPage} goToFifthPage = {nextPage} />}
-      { page === 5 && <Values/> }
+      { page === 5 && <Values goToFourthPage = {lastPage} goToSixthPage = {nextPage} /> }
+      { page === 6 && <Keypeople goToFifthPage = {lastPage} /> }
     </div>
   );
 }

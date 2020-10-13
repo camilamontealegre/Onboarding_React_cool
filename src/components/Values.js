@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ControlledAccordions() {
+export default function ControlledAccordions(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -31,8 +31,9 @@ export default function ControlledAccordions() {
     setExpanded(isExpanded ? panel : false);
   };
 
-  return (
+  const {goToFourthPage, goToSixthPage} = props
 
+  return (
     <div className={classes.root}>
     <h2 className="title-values">Valores</h2>
     <img src={manifesto} alt="Gloabnt manifesto " className='manifesto'/> 
@@ -127,8 +128,8 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <div className="buttons">
-         <button>Previous</button>
-         <button>Next</button>
+         <button  onClick={goToFourthPage}>Previous</button>
+         <button  onClick={goToSixthPage}>Next</button>
       </div>
     </div>
   );
