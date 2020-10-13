@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './ThirdPage.css';
 import growingpath from './growing-path2.png';
-import Accordion from './Accordion'
+import Accordion from './Accordion';
+import {useHistory} from 'react-router-dom';
 
  function ThirdPage(props){
+  const history= useHistory()
   const [ seniority, setSeniority ] = useState([
     {
       title:'Initial and Mid Level ⬇️',
@@ -37,10 +39,10 @@ import Accordion from './Accordion'
       return card;
     }))
   }
-  const {goToFourthPage, goToSecondPage} = props
+
 
   return (
-    <div>
+    <div className="group">
       <h2 className="titulo">Career Path</h2>
       <div className="caja">
         <img src={growingpath} alt="people-growing" className='image-size'/> 
@@ -51,8 +53,8 @@ import Accordion from './Accordion'
         </div>
       </div>
       <div className="buttons">
-          <button onClick={goToSecondPage}>Previous</button>
-          <button onClick={goToFourthPage}>Next</button>
+          <button onClick={()=>{history.push("/letsimagine")}}>Previous</button>
+          <button onClick={()=>{history.push("/triforce")}}>Next</button>
         </div>
     </div>
   )

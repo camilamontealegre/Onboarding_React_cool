@@ -7,12 +7,12 @@ import cope from './cope.png';
 import project from './project.jpg';
 import TabPanel from './TabPanel';
 import './FourthPage.css';
-
+import {useHistory} from 'react-router-dom';
 
 export default function FourthPage(props) {
   const [value, setValue] = React.useState(0);
-  const { Nombre, goToFifthPage, goToThirdPage } = props;
-
+  const { Nombre } = props;
+  const history = useHistory()
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -43,8 +43,8 @@ export default function FourthPage(props) {
         </TabPanel>
       </div>
       <div className="buttons">
-          <button onClick={goToThirdPage}>Previous</button>
-          <button onClick={goToFifthPage}>Next</button>
+          <button onClick={()=>{history.push("/third")}}>Previous</button>
+          <button onClick={()=>{history.push("/values")}}>Next</button>
       </div>
     </div>
   );
