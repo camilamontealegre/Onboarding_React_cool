@@ -7,6 +7,7 @@ import FourthPage from './components/FourthPage';
 import Values from './components/Values';
 import KeyPeople from './components/KeyPeople';
 import Ready from './components/Ready';
+import FinalStep from './components/FinalStep';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <Route exact path="/values" component={Values}/>
       <Route exact path="/keypeople" component={KeyPeople}/>
       <Route exact path="/ready" component={Ready}/>
+      <Route exact path="/carousel" component={FinalStep}/>
       <Route path="*" render={()=><Redirect to= "/welcome"/>}/>
       </Switch>
     </div>
