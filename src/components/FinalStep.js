@@ -4,6 +4,7 @@ import specialty from './spec.png';
 import foundation from './found.png';
 import strategic from './strat.png';
 
+
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
   
@@ -15,6 +16,7 @@ function ControlledCarousel() {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
         <Carousel.Caption className="title-location">
+            <h2>Classes and Studios</h2>
             <h3>SPECIALTY</h3>
           </Carousel.Caption>
           <img
@@ -32,6 +34,7 @@ function ControlledCarousel() {
           />
   
           <Carousel.Caption>
+          <h2>Classes and Studios</h2>
             <h3>FOUNDATION</h3>
           </Carousel.Caption>
 
@@ -45,6 +48,7 @@ function ControlledCarousel() {
           />
   
           <Carousel.Caption>
+          <h2>Classes and Studios</h2>
             <h3>STRATEGIC</h3>
           </Carousel.Caption>
         </Carousel.Item>
