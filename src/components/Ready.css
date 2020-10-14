@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-text h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .hero-text h2 span{
+    border-bottom: 5px solid white;
+  }
+  .hero-image {
+    background:linear-gradient(0deg, rgba(52, 235, 149, 0.8), rgba(52, 235, 149, 0.8)),url("https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .correct-size-logo{
+    height: 10em;
+    margin-top: -30px;
+  }
