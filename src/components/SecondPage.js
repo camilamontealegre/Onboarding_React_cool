@@ -16,7 +16,7 @@ function SecondPage(props) {
           history.push("/welcome")
           }}
         OnNext={()=>{
-          history.push("/third")
+          history.push("/career")
          }}
       />
     </div>

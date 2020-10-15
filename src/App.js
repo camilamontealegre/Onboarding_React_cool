@@ -6,8 +6,8 @@ import ThirdPage from './components/ThirdPage';
 import FourthPage from './components/FourthPage';
 import Values from './components/Values';
 import KeyPeople from './components/KeyPeople';
+import Studios from './components/Studios';
 import Ready from './components/Ready';
-import FinalStep from './components/FinalStep';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -40,12 +40,12 @@ function App() {
       <Switch>
       <Route exact path="/welcome" render={()=><FirstPage guardarNombre = {setName}/>}/>
       <Route exact path="/letsimagine" render={()=><SecondPage Nombre = {userName} />} />
-      <Route exact path="/third" component={ThirdPage}/> 
+      <Route exact path="/career" component={ThirdPage}/> 
       <Route exact path="/triforce" render={()=><FourthPage Nombre = {userName}/>}/>
       <Route exact path="/values" component={Values}/>
       <Route exact path="/keypeople" component={KeyPeople}/>
+      <Route exact path="/studios" component={Studios}/>
       <Route exact path="/ready" component={Ready}/>
-      <Route exact path="/carousel" component={FinalStep}/>
       <Route path="*" render={()=><Redirect to= "/welcome"/>}/>
       </Switch>
     </div>

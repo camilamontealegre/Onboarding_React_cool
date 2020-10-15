@@ -55,7 +55,7 @@ export default function KeyPeople() {
           history.push("/values")
           }}
         OnNext={()=>{
-          history.push("/ready")
+          history.push("/studios")
          }}
       /> 
       </div>

@@ -1,5 +1,4 @@
-.classes{
-text-align:center;
-background-color: black;
-color: white;
+.classes span{
+border-bottom: 5px solid yellowgreen;
+padding-bottom: 10px;
 }

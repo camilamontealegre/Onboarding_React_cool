@@ -4,6 +4,10 @@
     margin-left: 55px;
     padding-top: 30px;
 }
+.title-values span{
+    border-bottom: 5px solid yellowgreen;
+    padding-bottom: 10px;
+}
 .agrupa-todo{
     background-color: black;
     height: 650px

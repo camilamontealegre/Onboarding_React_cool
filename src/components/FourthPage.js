@@ -45,7 +45,7 @@ export default function FourthPage(props) {
       </div>
       <FooterButtons 
         OnPrevious={()=>{
-          history.push("/third")
+          history.push("/career")
           }}
         OnNext={()=>{
           history.push("/values")

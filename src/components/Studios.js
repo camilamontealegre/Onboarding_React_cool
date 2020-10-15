@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import specialty from './spec.png';
 import foundation from './found.png';
 import strategic from './strat.png';
-
+import Title from './Title';
+import './Studios.css';
+import FooterButtons from './FooterButtons';
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
@@ -11,13 +14,15 @@ function ControlledCarousel() {
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
-  
+    const history = useHistory()
+
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+      <div>
+      <Title className="classes"/>
+      <Carousel className="carou"activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-        <Carousel.Caption className="title-location">
-            <h2>Classes and Studios</h2>
-            <h3>SPECIALTY</h3>
+        <Carousel.Caption>
+        <h4 className="subtitle-loc">SPECIALTY</h4>
           </Carousel.Caption>
           <img
             className="d-block w-100"
@@ -32,30 +37,33 @@ function ControlledCarousel() {
             src={foundation}
             alt="Second slide"
           />
-  
           <Carousel.Caption>
-          <h2>Classes and Studios</h2>
-            <h3>FOUNDATION</h3>
+          <h4 className="subtitle-loca">FOUNDATION</h4>
           </Carousel.Caption>
-
         </Carousel.Item>
-
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={ strategic }
             alt="Third slide"
           />
-  
           <Carousel.Caption>
-          <h2>Classes and Studios</h2>
-            <h3>STRATEGIC</h3>
+            <h4 className="subtitle-loc">STRATEGIC</h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+       <div className="btns">
+       <FooterButtons 
+        OnPrevious={()=>{
+          history.push("/keypeople")
+          }}
+        OnNext={()=>{
+          history.push("/ready")
+         }}
+      />
+       </div>
+      </div>
     );
   }
-  
-
   
   export default ControlledCarousel

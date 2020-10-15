@@ -1,9 +1,10 @@
 import React from 'react';
+import './Title.css';
 
 function Title() {
     return(
     <div>
-      <h2 className="classes">Classes and Studios</h2>
+      <h2 className="classes">Classes <span>and</span> Studios</h2>
     </div>
     )
 }

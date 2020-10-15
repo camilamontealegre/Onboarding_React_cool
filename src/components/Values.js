@@ -37,7 +37,7 @@ export default function Values() {
   return (
     <div className="agrupa-todo">
       <div className={classes.root}>
-        <h2 className="title-values">Globant Values and FCI3</h2>
+        <h2 className="title-values"><span>Globant</span> Values and FCI3</h2>
         <div className="box" >
         <div className="manifesto">
           <img src={manifesto} alt="Globant manifesto " className='manifesto'/> 
