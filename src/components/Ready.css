@@ -9,6 +9,7 @@
   }
   .hero-text h2 span{
     border-bottom: 5px solid white;
+    padding-bottom: 10px;
   }
   .hero-image {
     background:linear-gradient(0deg, rgba(52, 235, 149, 0.8), rgba(52, 235, 149, 0.8)),url("https://www.cv-library.co.uk/career-advice/wp-content/uploads/2018/06/What-is-it-like-working-in-IT.jpg");

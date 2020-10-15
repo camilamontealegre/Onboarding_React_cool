@@ -3,7 +3,8 @@ import { Button } from 'react-bootstrap';
 
 function FooterButtons({OnPrevious, OnNext}) {
     const divStyle = {
-        paddingBottom: '30px',
+        paddingBottom: '20px',
+        marginBottom: '40px',
         backgroundColor: '#37b051',
         borderColor: 'transparent'
       }

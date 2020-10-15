@@ -22,7 +22,6 @@ function ControlledCarousel() {
       <Carousel className="carou"activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
         <Carousel.Caption>
-        <h4 className="subtitle-loc">SPECIALTY</h4>
           </Carousel.Caption>
           <img
             className="d-block w-100"
@@ -38,7 +37,6 @@ function ControlledCarousel() {
             alt="Second slide"
           />
           <Carousel.Caption>
-          <h4 className="subtitle-loca">FOUNDATION</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -48,7 +46,6 @@ function ControlledCarousel() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h4 className="subtitle-loc">STRATEGIC</h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
